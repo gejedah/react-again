@@ -6,6 +6,14 @@ import LoginPage from './pages/LoginPage';
 import KoreanPage from './pages/KoreanPage';
 
 function App() {
+  const navigate = useNavigate();
+  const [userName, setUsername] = useState("");
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/korean");
+    }
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
@@ -24,8 +32,8 @@ function App() {
       </header>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" component={LoginPage} />
-          <Route path="/korean" component={KoreanPage} />
+          <Route path="/login" element={LoginPage} />
+          <Route path="/korean" element={KoreanPage} />
         </Routes>
       </BrowserRouter>
     </div>

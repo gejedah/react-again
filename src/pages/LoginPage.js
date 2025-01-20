@@ -1,3 +1,3 @@
-export default const LoginPage = () => {
+export default function LoginPage() {
     return <div>로그인 페이지Daaa</div>;
 }
