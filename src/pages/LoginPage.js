@@ -1,3 +1,11 @@
+import { Form } from 'antd';
+
 export default function LoginPage() {
-    return <div>로그인 페이지Daaa</div>;
+    return <div>
+        <Form>
+            <Form.Item>
+                <p>로그인 Login</p>
+            </Form.Item>
+        </Form>
+    </div>;
 }
