@@ -6,13 +6,6 @@ import LoginPage from './pages/LoginPage';
 import KoreanPage from './pages/KoreanPage';
 
 function App() {
-  // const navigate = useNavigate();
-  // useEffect(() => {
-  //   const token = localStorage.getItem("token");
-  //   if (token) {
-  //     navigate("/korean");
-  //   }
-  // }, []);
   const [userName, setUsername] = useState("");
   return (
     <BrowserRouter>
